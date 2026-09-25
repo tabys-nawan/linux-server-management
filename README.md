@@ -4,7 +4,11 @@ A collection of Bash scripts and documentation for managing users, services, and
 
 ## Project Purpose
 This project simulates the work of a Junior DevOps team maintaining a Linux server environment. It provides reusable, well-documented scripts for common administration tasks, alongside documentation covering installation, configuration, and troubleshooting.
+
 This project simulates the work of a Junior DevOps team focused on automation.
+
+
+This project simulates the work of a Junior DevOps team focused on reliability and uptime.
 
 ## Project Structure
 ```
