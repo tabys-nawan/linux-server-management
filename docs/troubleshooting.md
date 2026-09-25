@@ -65,3 +65,21 @@ branches changed the same line relative to their common ancestor.
 Resolution: the two descriptions were merged into a single sentence that
 preserved the intent of both changes (automation + reliability/uptime),
 rather than discarding either contributor's work.
+
+
+## Recovery Case Study
+A defect was intentionally introduced into `scripts/network_check.sh`
+(an incorrect variable reference, `$hostt` instead of `$host`, in the
+`ping_host()` function), committed as if it were a normal change.
+Development continued on other files afterward, burying the defect in
+the commit history.
+
+The issue was identified using `git log --oneline -- scripts/network_check.sh`
+to trace changes to the affected file, followed by `git show <commit-hash>`
+to inspect the exact change that introduced the bug.
+
+Rather than using `git reset --hard` (which would rewrite history and
+discard the record of the mistake), `git revert <commit-hash>` was used
+to create a new commit that undoes the change while preserving the full
+development history — including the original defective commit — for
+future auditing.
