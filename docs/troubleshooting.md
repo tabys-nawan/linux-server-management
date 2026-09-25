@@ -53,3 +53,15 @@ See the project README's "Development Workflow" section for the full branching p
 git add <file>
 git commit
 ```
+
+
+
+## Merge Conflict Case Study
+A conflict was intentionally created by modifying the same line of `README.md`
+on two separate branches (`feature/conflict-a` and `feature/conflict-b`).
+Git could not automatically determine which version to keep because both
+branches changed the same line relative to their common ancestor.
+
+Resolution: the two descriptions were merged into a single sentence that
+preserved the intent of both changes (automation + reliability/uptime),
+rather than discarding either contributor's work.
