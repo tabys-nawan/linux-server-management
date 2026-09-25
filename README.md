@@ -8,9 +8,7 @@ This project simulates the work of a Junior DevOps team maintaining a Linux serv
 This project simulates the work of a Junior DevOps team focused on automation.
 
 
-This project simulates the work of a Junior DevOps team focused on reliability and uptime.
-
-## Project Structure
+This project simulates the work of a Junior DevOps team focused on automation, reliability, and uptime.## Project Structure
 ```
 linux-server-management/
 ├── README.md
