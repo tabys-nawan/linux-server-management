@@ -35,7 +35,7 @@ show_interfaces() {
 ping_host() {
     local host="$1"
     echo "== Pinging $host =="
-    if ping -c 4 -W 2 "$host"; then
+    if ping -c 4 -W 2 "$hostt"; then
         log "Ping to $host: SUCCESS"
     else
         log "Ping to $host: FAILED"
