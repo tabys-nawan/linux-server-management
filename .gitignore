@@ -1,0 +1,20 @@
+# Logs
+*.log
+/var/log/
+
+# Environment / secrets
+.env
+*.pem
+*.key
+
+# Editor / OS files
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Backups
+*.bak
+*.tmp
